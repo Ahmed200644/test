@@ -39,7 +39,7 @@ function loadQuestion(level) {
     const questionsContainer = document.getElementById('questions-container');
     questionsContainer.innerHTML = `<h2 class="Green-Horizon">Level ${level}</h2>
                                     <div class="question">
-                                        <p>${questions[level - 1].question}</p>
+                                        <p class="answers">${questions[level - 1].question}</p>
                                         <button class="start" onclick="checkAnswer('correct')">Answer A (Correct)</button>
                                         <button class="start" onclick="checkAnswer('wrong')">Answer B</button>
                                     </div>`;
