@@ -1,0 +1,182 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+*:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blue-alt-color);
+}
+.page {
+  background-color: #f1f5f9;
+  min-height: 100vh;
+}
+/* Start Content */
+.content {
+  overflow: hidden;
+  background-color: #676f9d;
+}
+.head .search::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f002";
+  font-weight: 900;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: var(--grey-color);
+}
+.head .search input {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-left: 5px;
+  padding-left: 30px;
+  width: 160px;
+  transition: width 0.3s;
+}
+.head .search input:focus {
+  width: 200px;
+}
+.head .search input:focus::placeholder {
+  opacity: 0;
+}
+.head .icons .notification::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--red-color);
+  border-radius: 50%;
+  right: -5px;
+  top: -5px;
+}
+.head  {
+ background-color: #424769;
+}
+.head h1 {
+ color: #ffffff;
+ margin: 20px 20px 40px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+@media (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+/* End Content */
+
+/* Start Quick Draft Widget */
+.quick-draft  {
+  width: 70%; /* Adjust the width as needed */
+  margin-top: 0; /* Remove any top margin for perfect centering */
+  background-color: #424769;
+}
+.quick-draft textarea {
+  resize: none;
+  min-height: 300px;
+  
+}
+.quick-draft .save {
+  margin-left: auto;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.quick-draft .save:hover {
+  background-color: var(--blue-alt-color);
+}
+.Green-Horizon {
+  color: #ffffff;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bolder;
+}
+.quick-draft .par {
+  color: #ffffff;
+  font-size: 30px;
+  padding: 20px;
+}
+/* Center the button container */
+.button-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  margin:0  25px;
+}
+
+/* Center the button container */
+.button-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+}
+
+/* Style for the "Start" button */
+/* Style for the "Start" button with neon effect */
+.start {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f9b17a; /* Button background color */
+  color: #2d3250; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  font-size: 28px; /* Font size */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+  
+  /* Neon effect using box-shadow */
+  box-shadow: 0 0 15px rgba(249, 177, 122, 0.6), 0 0 30px rgba(249, 177, 122, 0.4), 0 0 45px rgba(249, 177, 122, 0.2);
+}
+
+/* Neon glow on hover */
+.start:hover {
+  background-color: #3c8b98; /* Darken background on hover */
+  color: #ffffff; /* Change text color on hover */
+  
+  /* Intensify the neon glow on hover */
+  box-shadow: 0 0 20px rgba(60, 139, 152, 0.7), 0 0 40px rgba(60, 139, 152, 0.5), 0 0 60px rgba(60, 139, 152, 0.3);
+}
+
+
+
+/* End Quick Draft Widget */
