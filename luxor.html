@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxor Questions</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="page d-flex">
+      <div class="content w-full">
+        <div class="head between-flex">
+          <h1>Questions about Luxor</h1>
+        </div>
+        <div class="wrapper d-grid gap-20">
+          <div class="quick-draft p-20 rad-10">
+            <h2 class="Green-Horizon">Level 1</h2>
+            <div id="questions-container">
+              <div class="question">
+                <p class="answers">Question 1: What is the main environmental issue in Alexandria?</p>
+                <button class="start" onclick="checkAnswer('correct')">Answer A (Correct)</button>
+                <button class="start" onclick="checkAnswer('wrong')">Answer B</button>
+              </div>
+            </div>
+            <div id="result"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
