@@ -153,6 +153,7 @@ ul {
 .start {
   display: inline-block;
   padding: 10px 20px;
+  margin: 20px;
   background-color: #f9b17a; /* Button background color */
   color: #2d3250; /* Text color */
   border: none; /* Remove border */
@@ -177,6 +178,24 @@ ul {
   box-shadow: 0 0 20px rgba(60, 139, 152, 0.7), 0 0 40px rgba(60, 139, 152, 0.5), 0 0 60px rgba(60, 139, 152, 0.3);
 }
 
-
-
 /* End Quick Draft Widget */
+
+
+/* Style the avatar container */
+.avatar {
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+  align-items: center; /* Align the images vertically */
+  gap: 20px; /* Space between images */
+  margin: 40px 0; /* Add margin above the avatars */
+}
+
+/* Style the individual avatar images */
+.avatar img {
+  height: 450px; /* Set a consistent width for the avatars */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.avatar img:hover {
+  transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
