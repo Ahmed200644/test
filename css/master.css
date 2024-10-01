@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+*:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blue-alt-color);
+}
+.page {
+  background-color: #f1f5f9;
+  min-height: 100vh;
+}
+/* Start Content */
+.content {
+  overflow: hidden;
+  background-color: #8EB69B;
+} 
+.head  {
+ background-color: #0B2B26;
+}
+.head h1 {
+ color: #DAF1DE;
+ margin:  40px 40px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+@media (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+/* End Content */
+
+/* Start Quick Draft Widget */
+.quick-draft  {
+  width: 70%; /* Adjust the width as needed */
+  margin-top: 0; /* Remove any top margin for perfect centering */
+  background-color: #0B2B26;
+}
+.quick-draft textarea {
+  resize: none;
+  min-height: 300px;
+  
+}
+.quick-draft .save {
+  margin-left: auto;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.quick-draft .save:hover {
+  background-color: var(--blue-alt-color);
+}
+.Green-Horizon {
+  color: #DAF1DE;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bolder;
+}
+.quick-draft .par {
+  color: #DAF1DE;
+  font-size: 30px;
+  padding: 20px;
+}
+/* Center the button container */
+.button-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  margin:0  25px;
+}
+
+/* Center the button container */
+.button-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+}
+
+/* Style for the "Start" button */
+.start {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: #235347; /* Button background color */
+  color: #DAF1DE; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  font-size: 28px; /* Font size */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+  
+  /* Neon effect using box-shadow */
+  box-shadow: 0 0 5px rgba(218, 241, 222, 0.6), 
+              0 0 10px rgba(218, 241, 222, 0.4), 
+              0 0 15px rgba(218, 241, 222, 0.2);
+}
+
+/* Neon glow on hover */
+.start:hover {
+  background-color: #2c5e56; /* Darken background on hover */
+  color: #ffffff; /* Change text color on hover */
+  
+  /* Intensify the neon glow on hover */
+  box-shadow: 0 0 10px rgba(218, 241, 222, 0.8), 
+              0 0 20px rgba(218, 241, 222, 0.6), 
+              0 0 30px rgba(218, 241, 222, 0.4);
+}
+/* End Quick Draft Widget */
+
+
+/* Style the avatar container */
+.avatar {
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+  align-items: center; /* Align the images vertically */
+  gap: 20px; /* Space between images */
+  margin: 40px 0; /* Add margin above the avatars */
+}
+
+/* Style the individual avatar images */
+.avatar img {
+  height: 450px; /* Set a consistent width for the avatars */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.avatar img:hover {
+  transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
+
+
+/* #######################33 */
+.question .answers {
+  color: #DAF1DE;
+  font-size: 30px;
+  padding: 20px;
+}
+.congratulations-container {
+  text-align: center; /* Center the text and image */
+  margin: 40px 0; /* Margin for spacing */
+  animation: fadeIn 2s ease; /* Fade-in animation for the entire container */
+}
+
+.congratulations-image {
+  width: 500px; /* Set the width of the image */
+  animation: bounce 1s infinite; /* Bouncing animation for the image */
+}
+
+.congratulations-message {
+  font-size: 36px; /* Larger font size for emphasis */
+  font-weight: bold; /* Bold text */
+  color: var(--green-color); /* Use a custom color from your stylesheet */
+  animation: slideIn 1s ease; /* Slide-in animation for the text */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* #######################33 */
